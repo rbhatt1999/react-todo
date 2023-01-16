@@ -49,6 +49,13 @@ const TodoContainer = () => {
     )
   }
 
+  const deleteCompleted = ()=>{
+    setTodos(
+    todos.filter(element => {
+      return !element.completed;
+    }))
+  }
+
   function getInitialTodos() {
     // getting stored items
     const temp = localStorage.getItem("todos")
@@ -72,6 +79,7 @@ const TodoContainer = () => {
           handleChangeProps={handleChange}
           deleteTodoProps={delTodo}
           setUpdate={setUpdate}
+          deleteCompleted = {deleteCompleted}
         />
       </div>
     </div>

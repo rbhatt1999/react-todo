@@ -35,9 +35,9 @@ const InputTodo = props => {
         name="title"
         onChange={onChange}
       />
-      <button className="input-submit"><button className="input-submit">
+      <button className="input-submit">
   <ImEnter style={{ color: "grey", fontSize: "20px", marginTop: "2px" }} />
-</button></button>
+</button>
     </form>
   )
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, {useState} from "react"
 import styles from "./TodoItem.module.css"
 import {FaTrash} from "react-icons/fa"
 
